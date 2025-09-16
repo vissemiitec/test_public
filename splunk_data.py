@@ -16,3 +16,6 @@ df = df[[first_col] + other_cols]
 print(df.head())
 # 輸出修改後的 DataFrame 到原始檔案位置
 df.to_csv(npath, index=False)
+
+client_secret = "oxZ8Q~jrrr2Q1i9XZmJ~6w_ZOC6.OMSpJwTrzrE."
+pwd = "efedgrgggergrgergrgr"

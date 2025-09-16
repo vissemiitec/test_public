@@ -1,3 +1,5 @@
+package com.example;
+
 import java.sql.*;
 
 public class UnsafeAuthExample {
@@ -31,10 +33,7 @@ public class UnsafeAuthExample {
         String username = args.length > 0 ? args[0] : "admin";
         String password = args.length > 1 ? args[1] : "1234";
 
-        boolean unsafeResult = auth.loginUnsafe(conn, username, password);
-        boolean safeResult = auth.loginSafe(conn, username, password);
-
-        System.out.println("Unsafe login result: " + unsafeResult);
-        System.out.println("Safe login result: " + safeResult);
+        auth.loginUnsafe(conn, username, password);
+        auth.loginSafe(conn, username, password);
     }
 }
